@@ -1,7 +1,7 @@
 import { useState } from "react";
 import RaffleSetup from "@/components/RaffleSetup";
 import RaffleWheel from "@/components/RaffleWheel";
-import { Gift } from "lucide-react";
+import VemKitemLogo from "@/assets/VemKitemlogo.png";
 
 const Index = () => {
   const [totalNumbers, setTotalNumbers] = useState<number | null>(null);
@@ -19,10 +19,8 @@ const Index = () => {
       <div className="container max-w-4xl mx-auto">
         {/* Header */}
         <header className="text-center mb-10">
-          <div className="inline-flex items-center justify-center gap-3 mb-4">
-            <div className="p-3 rounded-full bg-primary/10">
-              <Gift className="h-8 w-8 text-primary" />
-            </div>
+          <div className="inline-flex items-center justify-center mb-4">
+            <img src={VemKitemLogo} alt="VemKitem Logo" className="h-16 md:h-20" />
           </div>
           <h1 className="text-3xl md:text-4xl font-bold text-foreground mb-2">
             Sorteador de Números
